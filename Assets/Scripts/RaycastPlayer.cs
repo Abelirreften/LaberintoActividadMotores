@@ -23,7 +23,7 @@ public class RaycastPlayer : JumpScare
         if (Physics.Raycast(ray, out hit))
         {
             //Si el objeto tiene tag "Enemigo" suena el audio y se desactiva el objeto
-            if (hit.transform.gameObject.CompareTag("Enemigo"))
+            if (hit.transform.gameObject.CompareTag("Puerta"))
             {
                 source.GetComponent<AudioSource>().Play();
                 hit.transform.gameObject.SetActive(false);
